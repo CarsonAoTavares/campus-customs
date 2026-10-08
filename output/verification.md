@@ -1,6 +1,6 @@
 # Homework 4 Verification
 
-The final local verification used the project FastAPI service and the provided SQLite data pack.
+The final local verification used the root FastAPI service and the provided SQLite data pack.
 
 - Frontend: `npm run build` and `npm run lint` passed.
 - Backend: Python compilation passed.

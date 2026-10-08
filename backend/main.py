@@ -325,9 +325,7 @@ async def chat(payload: ChatRequest, request: Request) -> ChatResponse:
             store_chat_exchange(user['id'], message, answer)
         return ChatResponse(answer=answer, related_products=products)
 
-    # The model may return a well-formed ID that was not part of this request's
-    # database context. Keep the response grounded to the products found for
-    # this conversation rather than trusting the model's ID alone.
+    # Keep model-selected cards inside the trusted database context for this request.
     context_product_ids = {product.product_id for product in products}
     selected: list[ProductLookup] = []
     seen_ids: set[str] = set()
