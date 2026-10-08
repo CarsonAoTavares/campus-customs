@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs · Live App Checks</title>
+  <style>
+    :root { color-scheme: light; font-family: Georgia, 'Times New Roman', serif; color: #172b43; background: #f6f5f0; }
+    * { box-sizing: border-box; }
+    body { max-width: 1000px; margin: 0 auto; padding: 36px 20px 64px; }
+    header { padding-bottom: 22px; border-bottom: 2px solid #123a70; }
+    h1 { margin: 0 0 8px; color: #123a70; font-size: 2.25rem; }
+    header p, figcaption { color: #53667c; font: 500 1rem/1.6 'Avenir Next', Avenir, sans-serif; }
+    section { padding: 26px 0; border-bottom: 1px solid #d9e0e6; }
+    h2 { margin: 0 0 13px; color: #123a70; font-size: 1.55rem; }
+    figure { margin: 0; }
+    img { display: block; width: 100%; height: auto; border: 1px solid #d5dde4; border-radius: 8px; background: #fff; box-shadow: 0 8px 24px rgba(18,58,112,.1); }
+    figcaption { margin-top: 12px; }
+    .note { padding: 14px 16px; border-left: 4px solid #e87968; background: #fff4e6; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Campus Customs · Live App Checks</h1>
+    <p>Browser captures from the running Vite storefront and FastAPI service.</p>
+  </header>
+
+  <section aria-labelledby="stock-check">
+    <h2 id="stock-check">1. Viewed product price and size stock</h2>
+    <figure>
+      <img src="app_check_images/inventory_price.png" alt="Chat answer showing the Basic Hoodie Big Yale price and inventory by size">
+      <figcaption class="note">The shopper asks about “this item” while viewing Basic Hoodie Big Yale; the reply gives the SQLite price ($68.00) and exact quantities for L, M, S, XL, XS, and XXL. Portkey DNS was unavailable during this live check, so the interface explicitly used its database-backed fallback rather than presenting it as a model-generated answer.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="category-check">
+    <h2 id="category-check">2. Dynamic hoodie matches</h2>
+    <figure>
+      <img src="app_check_images/category_cards.png" alt="Four matching hoodie product cards with product images, names, descriptions, and prices">
+      <figcaption>After the shopper asks “What hoodies are available?”, the live catalog returns four matching cards on the page. Each card is built from the structured API response and opens the same full product detail route as a catalog card.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="usability-check">
+    <h2 id="usability-check">3. Catalog search and type filter</h2>
+    <figure>
+      <img src="app_check_images/catalog_filter.png" alt="Products section filtered by the search term basic and the pullover hoodie type">
+      <figcaption>The shopper combines a text search with the garment-type filter to narrow the catalog to Basic Hoodie Big Yale. The result count and product card update immediately, making the collection faster to scan.</figcaption>
+    </figure>
+  </section>
+</body>
+</html>

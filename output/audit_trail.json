@@ -1,0 +1,563 @@
+[
+  {
+    "time": "2026-10-08T00:36:13.929497+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What hoodies are available?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "basic-hoodie-big-yale",
+        "champion-reverse-weave-hoodie-1",
+        "crew-left-chest-hoodie",
+        "district-vit-hoodie-vintage-bulldog"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:36:13.930501+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:36:13.930933+00:00",
+    "tool_name": "get_product_stock",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "product_name": "Basic Hoodie Big Yale",
+      "stock_by_size": [
+        {
+          "size": "L",
+          "quantity": 8
+        },
+        {
+          "size": "M",
+          "quantity": 5
+        },
+        {
+          "size": "S",
+          "quantity": 5
+        },
+        {
+          "size": "XL",
+          "quantity": 2
+        },
+        {
+          "size": "XS",
+          "quantity": 15
+        },
+        {
+          "size": "XXL",
+          "quantity": 25
+        }
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:37:08.285750+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "Is this in stock?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 0,
+      "product_ids": []
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:37:08.286856+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:37:08.287189+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:37:08.287349+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 17,
+      "current_product_id": "basic-hoodie-big-yale",
+      "authenticated": false
+    },
+    "result": {
+      "answer_length": 31,
+      "product_ids": [
+        "basic-hoodie-big-yale"
+      ]
+    },
+    "stop_reason": "structured_output"
+  },
+  {
+    "time": "2026-10-08T00:46:15.072549+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What hoodies are available?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "basic-hoodie-big-yale",
+        "champion-reverse-weave-hoodie-1",
+        "crew-left-chest-hoodie",
+        "district-vit-hoodie-vintage-bulldog"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:46:16.629102+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 27,
+      "current_product_id": null,
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError"
+    },
+    "stop_reason": "agent_error"
+  },
+  {
+    "time": "2026-10-08T00:46:50.054438+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What hoodies are available?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "basic-hoodie-big-yale",
+        "champion-reverse-weave-hoodie-1",
+        "crew-left-chest-hoodie",
+        "district-vit-hoodie-vintage-bulldog"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:46:51.501623+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 27,
+      "current_product_id": null,
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError",
+      "fallback": "database_catalog"
+    },
+    "stop_reason": "model_error_database_fallback"
+  },
+  {
+    "time": "2026-10-08T00:47:21.027933+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What is the price and exact stock by size for this item?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "district-vit-crewneck-vintage-standing-bulldog",
+        "hype-and-vice-yale-university-offside-crewneck",
+        "hype-and-vice-yale-university-premium-crewneck",
+        "tri-blend-sports-track-and-field-t-shirt"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:47:21.028807+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:47:22.340537+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 56,
+      "current_product_id": "basic-hoodie-big-yale",
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError",
+      "fallback": "database_catalog"
+    },
+    "stop_reason": "model_error_database_fallback"
+  },
+  {
+    "time": "2026-10-08T00:48:24.670402+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What is the price and stock for this item?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "district-vit-crewneck-vintage-standing-bulldog",
+        "hype-and-vice-yale-university-offside-crewneck",
+        "hype-and-vice-yale-university-premium-crewneck",
+        "tri-blend-sports-track-and-field-t-shirt"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:48:24.671371+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:48:24.671710+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 42,
+      "current_product_id": "basic-hoodie-big-yale",
+      "authenticated": false
+    },
+    "result": {
+      "answer_length": 260,
+      "product_ids": [
+        "basic-hoodie-big-yale"
+      ]
+    },
+    "stop_reason": "model_not_configured_fallback"
+  },
+  {
+    "time": "2026-10-08T00:52:07.661269+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What is the price and stock by size for this item?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "district-vit-crewneck-vintage-standing-bulldog",
+        "hype-and-vice-yale-university-offside-crewneck",
+        "hype-and-vice-yale-university-premium-crewneck",
+        "tri-blend-sports-track-and-field-t-shirt"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:52:07.662477+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:52:09.161897+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 50,
+      "current_product_id": "basic-hoodie-big-yale",
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError",
+      "fallback": "database_catalog"
+    },
+    "stop_reason": "model_error_database_fallback"
+  },
+  {
+    "time": "2026-10-08T00:53:40.063767+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What is this item priced at?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "jonathan-edwards-college-crewneck",
+        "baseball-left-chest-crewneck",
+        "benjamin-franklin-1-4-zip",
+        "berkeley-1-4-zip"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:53:40.066773+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:53:41.460587+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 28,
+      "current_product_id": "basic-hoodie-big-yale",
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError",
+      "fallback": "database_catalog"
+    },
+    "stop_reason": "model_error_database_fallback"
+  },
+  {
+    "time": "2026-10-08T00:54:02.407492+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What is the price and stock by size for this item?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "district-vit-crewneck-vintage-standing-bulldog",
+        "hype-and-vice-yale-university-offside-crewneck",
+        "hype-and-vice-yale-university-premium-crewneck",
+        "tri-blend-sports-track-and-field-t-shirt"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:54:02.408527+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:54:03.742084+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 50,
+      "current_product_id": "basic-hoodie-big-yale",
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError",
+      "fallback": "database_catalog"
+    },
+    "stop_reason": "model_error_database_fallback"
+  },
+  {
+    "time": "2026-10-08T00:54:58.444778+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What hoodies are available?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "basic-hoodie-big-yale",
+        "champion-reverse-weave-hoodie-1",
+        "crew-left-chest-hoodie",
+        "district-vit-hoodie-vintage-bulldog"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:54:58.445703+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 27,
+      "current_product_id": null,
+      "authenticated": false
+    },
+    "result": {
+      "answer_length": 131,
+      "product_ids": [
+        "basic-hoodie-big-yale",
+        "champion-reverse-weave-hoodie-1",
+        "crew-left-chest-hoodie",
+        "district-vit-hoodie-vintage-bulldog"
+      ]
+    },
+    "stop_reason": "model_not_configured_fallback"
+  },
+  {
+    "time": "2026-10-08T00:54:58.457365+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What is this price and stock by size?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "district-vit-crewneck-vintage-standing-bulldog",
+        "hype-and-vice-yale-university-offside-crewneck",
+        "hype-and-vice-yale-university-premium-crewneck",
+        "tri-blend-sports-track-and-field-t-shirt"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:54:58.458141+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result": {
+      "found": true,
+      "name": "Basic Hoodie Big Yale",
+      "price": 68.0
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:54:58.458636+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 37,
+      "current_product_id": "basic-hoodie-big-yale",
+      "authenticated": false
+    },
+    "result": {
+      "answer_length": 260,
+      "product_ids": [
+        "basic-hoodie-big-yale"
+      ]
+    },
+    "stop_reason": "model_not_configured_fallback"
+  },
+  {
+    "time": "2026-10-08T00:55:14.075717+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What hoodies are available?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "basic-hoodie-big-yale",
+        "champion-reverse-weave-hoodie-1",
+        "crew-left-chest-hoodie",
+        "district-vit-hoodie-vintage-bulldog"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T00:55:15.347683+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 27,
+      "current_product_id": null,
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError",
+      "fallback": "database_catalog"
+    },
+    "stop_reason": "model_error_database_fallback"
+  },
+  {
+    "time": "2026-10-08T01:00:40.733105+00:00",
+    "tool_name": "search_products",
+    "arguments": {
+      "query": "What hoodies are available?",
+      "limit": 4
+    },
+    "result": {
+      "match_count": 4,
+      "product_ids": [
+        "basic-hoodie-big-yale",
+        "champion-reverse-weave-hoodie-1",
+        "crew-left-chest-hoodie",
+        "district-vit-hoodie-vintage-bulldog"
+      ]
+    },
+    "stop_reason": null
+  },
+  {
+    "time": "2026-10-08T01:00:42.088009+00:00",
+    "tool_name": "agent_loop",
+    "arguments": {
+      "message_length": 27,
+      "current_product_id": null,
+      "authenticated": false
+    },
+    "result": {
+      "error_type": "ModelAPIError",
+      "fallback": "database_catalog"
+    },
+    "stop_reason": "model_error_database_fallback"
+  }
+]
